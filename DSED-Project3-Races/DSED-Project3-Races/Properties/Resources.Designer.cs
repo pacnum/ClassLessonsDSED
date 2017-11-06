@@ -93,6 +93,16 @@ namespace DSED_Project3_Races.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap race_horse_Bet {
+            get {
+                object obj = ResourceManager.GetObject("race-horse-Bet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap smug {
             get {
                 object obj = ResourceManager.GetObject("smug", resourceCulture);
@@ -106,6 +116,26 @@ namespace DSED_Project3_Races.Properties {
         internal static System.Drawing.Bitmap smug__1_ {
             get {
                 object obj = ResourceManager.GetObject("smug (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smug__1__Transp {
+            get {
+                object obj = ResourceManager.GetObject("smug (1)-Transp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smug__1__Transp1 {
+            get {
+                object obj = ResourceManager.GetObject("smug (1)-Transp1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
