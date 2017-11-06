@@ -46,7 +46,12 @@ namespace DSED_Project3_Races
                     Cash += MyBet.Payout(Winner);
                 }
             }
+
+        internal void UpdateLabels()
+        {
+            throw new NotImplementedException();
         }
+    }
 }
 
 

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Media;
+using System.Windows.Forms;
 
 namespace DSED_Project3_Races
 {
@@ -30,6 +31,7 @@ namespace DSED_Project3_Races
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -55,7 +57,8 @@ namespace DSED_Project3_Races
             this.raceTrack = new System.Windows.Forms.PictureBox();
             this.lblname = new System.Windows.Forms.Label();
             this.updownSnailNumber = new System.Windows.Forms.NumericUpDown();
-            this.updSnailNumber = new System.Windows.Forms.Label();
+            this.lblSnail = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -338,22 +341,22 @@ namespace DSED_Project3_Races
             this.updownSnailNumber.Size = new System.Drawing.Size(120, 34);
             this.updownSnailNumber.TabIndex = 29;
             // 
-            // updSnailNumber
+            // lblSnail
             // 
-            this.updSnailNumber.AutoSize = true;
-            this.updSnailNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updSnailNumber.Location = new System.Drawing.Point(761, 329);
-            this.updSnailNumber.Name = "updSnailNumber";
-            this.updSnailNumber.Size = new System.Drawing.Size(55, 28);
-            this.updSnailNumber.TabIndex = 30;
-            this.updSnailNumber.Text = "Snail";
+            this.lblSnail.AutoSize = true;
+            this.lblSnail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSnail.Location = new System.Drawing.Point(761, 329);
+            this.lblSnail.Name = "lblSnail";
+            this.lblSnail.Size = new System.Drawing.Size(55, 28);
+            this.lblSnail.TabIndex = 30;
+            this.lblSnail.Text = "Snail";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1664, 871);
-            this.Controls.Add(this.updSnailNumber);
+            this.Controls.Add(this.lblSnail);
             this.Controls.Add(this.updownSnailNumber);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.btnBet);
@@ -423,9 +426,11 @@ namespace DSED_Project3_Races
         private System.Windows.Forms.Button btnBet;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.NumericUpDown updownSnailNumber;
-        private System.Windows.Forms.Label updSnailNumber;
+        private System.Windows.Forms.Label lblSnail;
+        private System.Windows.Forms.Timer timer1;
         private TextBox txbJohnBet;
         private TextBox txbJimBet;
+        
     }
 }
 

@@ -58,7 +58,7 @@ namespace DSED_Project3_Races
                 Name = "Jane",
                 Cash = 50,
                 MyradioButton = rbJane,
-                MyLabel = txbJaneBet,
+                //MyLabel = txbJaneBet,
                 MyBet = null,
 
             };
@@ -70,7 +70,7 @@ namespace DSED_Project3_Races
                 Name = "John",
                 Cash = 75,
                 MyradioButton = rbJohn,
-                MyLabel = txbJohnBet,
+                //MyLabel = txbJohnBet,
                 MyBet = null,
 
             };
@@ -81,7 +81,7 @@ namespace DSED_Project3_Races
                 Name = "Jim",
                 Cash = 50,
                 MyradioButton = rbJim,
-                MyLabel = txbJimBet,
+               // MyLabel = txbJimBet,
                 MyBet = null,
 
             };
@@ -92,14 +92,11 @@ namespace DSED_Project3_Races
             }
         }
 
-        //private void LoadData()
-        //{
 
-        //}
         private void StartTheRace_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            groupbox1.Enabled = false;
+            //groupbox1.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -116,10 +113,10 @@ namespace DSED_Project3_Races
                     }
                     for (int j = 0; j <= 3; j++)
                     {
-                        SnailArray[j].TakeStartingPosition();
+                        SnailArray[j].TakeStartingPostion();
                     }
                     timer1.Stop();
-                    groupbox1.Enabled = true;
+                    //groupbox1.Enabled = true;
                     MessageBox.Show("Snail number " + (i + 1) + " won the race!");
                 }
                 else
@@ -135,7 +132,7 @@ namespace DSED_Project3_Races
             {
                 if (LegoPunterArray[i].MyradioButton.Checked == true)
                 {
-                    LegoPunterArray[i].PlaceBet((int)updownBetAmount.Value, ((int)updSnailNumber.Value - 1));
+                    LegoPunterArray[i].PlaceBet((int)updownBetAmount.Value, ((int)updownSnailNumber.Value - 1));
                     LegoPunterArray[i].MyLabel.Text = LegoPunterArray[i].MyBet.GetDescription();
                 }
             }
