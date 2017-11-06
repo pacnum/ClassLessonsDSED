@@ -184,7 +184,7 @@ namespace DSED_Project3_Races
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(1136, 355);
+            this.textBox2.Location = new System.Drawing.Point(1136, 270);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(393, 39);
@@ -193,7 +193,7 @@ namespace DSED_Project3_Races
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(1136, 270);
+            this.textBox3.Location = new System.Drawing.Point(1136, 347);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(393, 39);
@@ -248,7 +248,7 @@ namespace DSED_Project3_Races
             // StartTheRace
             // 
             this.StartTheRace.Image = global::DSED_Project3_Races.Properties.Resources.Amazing_Race_Logo;
-            this.StartTheRace.Location = new System.Drawing.Point(653, 542);
+            this.StartTheRace.Location = new System.Drawing.Point(653, 556);
             this.StartTheRace.Margin = new System.Windows.Forms.Padding(4);
             this.StartTheRace.Name = "StartTheRace";
             this.StartTheRace.Size = new System.Drawing.Size(327, 85);
@@ -422,14 +422,15 @@ namespace DSED_Project3_Races
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox StartTheRace;
         private System.Windows.Forms.TextBox txbJaneBet;
+        private System.Windows.Forms.TextBox txbJohnBet;
+        private System.Windows.Forms.TextBox txbJimBet;
         private System.Windows.Forms.NumericUpDown updownBetAmount;
         private System.Windows.Forms.Button btnBet;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.NumericUpDown updownSnailNumber;
         private System.Windows.Forms.Label lblSnail;
         private System.Windows.Forms.Timer timer1;
-        private TextBox txbJohnBet;
-        private TextBox txbJimBet;
+
         
     }
 }

@@ -52,43 +52,40 @@ namespace DSED_Project3_Races
                 MyRandom = Randomizer
             };
 
-            LegoPunterArray[0] = new LegoPunter
+            if (LegoPunterArray != null)
             {
+                LegoPunterArray[0] = new LegoPunter
+                {
+                    Name = "Jane",
+                    Cash = 50,
+                    MyradioButton = rbJane,
+                    //MyLabel = txbJaneBet,
+                    MyBet = null,
+                };
 
-                Name = "Jane",
-                Cash = 50,
-                MyradioButton = rbJane,
-                //MyLabel = txbJaneBet,
-                MyBet = null,
 
-            };
+                LegoPunterArray[1] = new LegoPunter
+                {
+                    Name = "John",
+                    Cash = 75,
+                    MyradioButton = rbJohn,
+                    //MyLabel = txbJohnBet,
+                    MyBet = null,
+                };
 
+                LegoPunterArray[2] = new LegoPunter
+                {
+                    Name = "Jim",
+                    Cash = 50,
+                    MyradioButton = rbJim,
+                    // MyLabel = txbJimBet,
+                    MyBet = null,
+                };
 
-            LegoPunterArray[1] = new LegoPunter
-            {
-
-                Name = "John",
-                Cash = 75,
-                MyradioButton = rbJohn,
-                //MyLabel = txbJohnBet,
-                MyBet = null,
-
-            };
-
-            LegoPunterArray[2] = new LegoPunter
-            {
-
-                Name = "Jim",
-                Cash = 50,
-                MyradioButton = rbJim,
-               // MyLabel = txbJimBet,
-                MyBet = null,
-
-            };
-
-            for (int i = 0; i < 3; i++)
-            {
-                LegoPunterArray[i].UpdateLabels();
+                for (int i = 0; i < 3; i++)
+                {
+                    LegoPunterArray[i].UpdateLabels();
+                }
             }
         }
 
