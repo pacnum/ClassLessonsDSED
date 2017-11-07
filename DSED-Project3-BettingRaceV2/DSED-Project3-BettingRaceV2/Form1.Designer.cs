@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblMinBet = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblJoeBetLabel = new System.Windows.Forms.Label();
+            this.lblJoBetLabel = new System.Windows.Forms.Label();
             this.lblBobBetLabel = new System.Windows.Forms.Label();
             this.lblAlBetLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -78,14 +78,13 @@
             // 
             // rbJoe
             // 
-            this.rbJoe.AutoSize = true;
             this.rbJoe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJoe.Location = new System.Drawing.Point(103, 56);
+            this.rbJoe.Location = new System.Drawing.Point(120, 51);
             this.rbJoe.Name = "rbJoe";
-            this.rbJoe.Size = new System.Drawing.Size(53, 32);
+            this.rbJoe.Size = new System.Drawing.Size(145, 42);
             this.rbJoe.TabIndex = 2;
             this.rbJoe.TabStop = true;
-            this.rbJoe.Text = "Jo";
+            this.rbJoe.Text = "Jo has $50";
             this.rbJoe.UseVisualStyleBackColor = true;
             this.rbJoe.CheckedChanged += new System.EventHandler(this.rbJoe_CheckedChanged);
             // 
@@ -93,12 +92,12 @@
             // 
             this.rbBob.AutoSize = true;
             this.rbBob.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbBob.Location = new System.Drawing.Point(103, 145);
+            this.rbBob.Location = new System.Drawing.Point(120, 145);
             this.rbBob.Name = "rbBob";
-            this.rbBob.Size = new System.Drawing.Size(69, 32);
+            this.rbBob.Size = new System.Drawing.Size(145, 32);
             this.rbBob.TabIndex = 3;
             this.rbBob.TabStop = true;
-            this.rbBob.Text = "Bob";
+            this.rbBob.Text = "Bob has $75";
             this.rbBob.UseVisualStyleBackColor = true;
             this.rbBob.CheckedChanged += new System.EventHandler(this.rbBob_CheckedChanged);
             // 
@@ -106,12 +105,12 @@
             // 
             this.rbAl.AutoSize = true;
             this.rbAl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbAl.Location = new System.Drawing.Point(103, 235);
+            this.rbAl.Location = new System.Drawing.Point(120, 235);
             this.rbAl.Name = "rbAl";
-            this.rbAl.Size = new System.Drawing.Size(51, 32);
+            this.rbAl.Size = new System.Drawing.Size(128, 32);
             this.rbAl.TabIndex = 4;
             this.rbAl.TabStop = true;
-            this.rbAl.Text = "Al";
+            this.rbAl.Text = "Al has $45";
             this.rbAl.UseVisualStyleBackColor = true;
             this.rbAl.CheckedChanged += new System.EventHandler(this.rbAl_CheckedChanged);
             // 
@@ -119,17 +118,17 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(27, 306);
+            this.lblName.Location = new System.Drawing.Point(57, 313);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(91, 37);
+            this.lblName.Size = new System.Drawing.Size(99, 37);
             this.lblName.TabIndex = 5;
-            this.lblName.Text = "label1";
+            this.lblName.Text = "Punter";
             // 
             // btnBet
             // 
             this.btnBet.Location = new System.Drawing.Point(222, 297);
             this.btnBet.Name = "btnBet";
-            this.btnBet.Size = new System.Drawing.Size(104, 41);
+            this.btnBet.Size = new System.Drawing.Size(161, 59);
             this.btnBet.TabIndex = 6;
             this.btnBet.Text = "Bet";
             this.btnBet.UseVisualStyleBackColor = true;
@@ -137,69 +136,96 @@
             // 
             // updownBetValue
             // 
-            this.updownBetValue.Location = new System.Drawing.Point(430, 315);
+            this.updownBetValue.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updownBetValue.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.updownBetValue.Location = new System.Drawing.Point(490, 304);
             this.updownBetValue.Name = "updownBetValue";
-            this.updownBetValue.Size = new System.Drawing.Size(120, 22);
+            this.updownBetValue.Size = new System.Drawing.Size(79, 38);
             this.updownBetValue.TabIndex = 7;
+            this.updownBetValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // updownSnail
             // 
-            this.updownSnail.Location = new System.Drawing.Point(905, 313);
+            this.updownSnail.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updownSnail.Location = new System.Drawing.Point(922, 301);
+            this.updownSnail.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.updownSnail.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.updownSnail.Name = "updownSnail";
-            this.updownSnail.Size = new System.Drawing.Size(51, 22);
+            this.updownSnail.Size = new System.Drawing.Size(51, 38);
             this.updownSnail.TabIndex = 8;
             this.updownSnail.Tag = "";
+            this.updownSnail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.updownSnail.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(635, 315);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(640, 301);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 23);
+            this.label1.Size = new System.Drawing.Size(276, 41);
             this.label1.TabIndex = 9;
             this.label1.Text = "For Snail Number ...";
             // 
             // lblMinBet
             // 
-            this.lblMinBet.Location = new System.Drawing.Point(254, 145);
+            this.lblMinBet.Location = new System.Drawing.Point(293, 156);
             this.lblMinBet.Name = "lblMinBet";
             this.lblMinBet.Size = new System.Drawing.Size(150, 23);
             this.lblMinBet.TabIndex = 10;
             this.lblMinBet.Text = "Minimum Bet Label";
+            this.lblMinBet.Visible = false;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(562, 34);
+            this.label2.Location = new System.Drawing.Point(544, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 23);
             this.label2.TabIndex = 11;
             this.label2.Text = "Betting";
+            this.label2.Visible = false;
             // 
-            // lblJoeBetLabel
+            // lblJoBetLabel
             // 
-            this.lblJoeBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJoeBetLabel.Location = new System.Drawing.Point(504, 76);
-            this.lblJoeBetLabel.Name = "lblJoeBetLabel";
-            this.lblJoeBetLabel.Size = new System.Drawing.Size(190, 46);
-            this.lblJoeBetLabel.TabIndex = 12;
-            this.lblJoeBetLabel.Text = "Joe Bet Label";
+            this.lblJoBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoBetLabel.Location = new System.Drawing.Point(504, 56);
+            this.lblJoBetLabel.Name = "lblJoBetLabel";
+            this.lblJoBetLabel.Size = new System.Drawing.Size(575, 46);
+            this.lblJoBetLabel.TabIndex = 12;
+            this.lblJoBetLabel.Text = "Jo has not made a bet";
             // 
             // lblBobBetLabel
             // 
             this.lblBobBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBobBetLabel.Location = new System.Drawing.Point(504, 133);
+            this.lblBobBetLabel.Location = new System.Drawing.Point(504, 145);
             this.lblBobBetLabel.Name = "lblBobBetLabel";
-            this.lblBobBetLabel.Size = new System.Drawing.Size(195, 34);
+            this.lblBobBetLabel.Size = new System.Drawing.Size(575, 34);
             this.lblBobBetLabel.TabIndex = 13;
-            this.lblBobBetLabel.Text = "Bob Bet Label";
+            this.lblBobBetLabel.Text = "Bob has not made a bet";
             // 
             // lblAlBetLabel
             // 
             this.lblAlBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlBetLabel.Location = new System.Drawing.Point(507, 207);
+            this.lblAlBetLabel.Location = new System.Drawing.Point(504, 231);
             this.lblAlBetLabel.Name = "lblAlBetLabel";
-            this.lblAlBetLabel.Size = new System.Drawing.Size(151, 36);
+            this.lblAlBetLabel.Size = new System.Drawing.Size(575, 36);
             this.lblAlBetLabel.TabIndex = 14;
-            this.lblAlBetLabel.Text = "Al Bet Label";
+            this.lblAlBetLabel.Text = "Al has not made a bet";
             // 
             // timer1
             // 
@@ -216,7 +242,7 @@
             this.groupBox1.Controls.Add(this.rbJoe);
             this.groupBox1.Controls.Add(this.rbBob);
             this.groupBox1.Controls.Add(this.rbAl);
-            this.groupBox1.Controls.Add(this.lblJoeBetLabel);
+            this.groupBox1.Controls.Add(this.lblJoBetLabel);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblAlBetLabel);
             this.groupBox1.Controls.Add(this.btnStart);
@@ -227,9 +253,9 @@
             this.groupBox1.Controls.Add(this.updownBetValue);
             this.groupBox1.Controls.Add(this.lblName);
             this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.groupBox1.Location = new System.Drawing.Point(36, 53);
+            this.groupBox1.Location = new System.Drawing.Point(123, 79);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1329, 382);
+            this.groupBox1.Size = new System.Drawing.Size(1368, 382);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.UseCompatibleTextRendering = true;
@@ -268,7 +294,7 @@
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.snail__2_;
-            this.pictureBox4.Location = new System.Drawing.Point(36, 571);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 734);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(83, 28);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -279,7 +305,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.snail__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(36, 537);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 690);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(83, 28);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -290,7 +316,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.snail__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(36, 503);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 644);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(83, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -301,7 +327,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.snail__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 461);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 600);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(83, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -313,7 +339,7 @@
             this.pboxRaceTrack.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.vectorstock_497407;
             this.pboxRaceTrack.Location = new System.Drawing.Point(3, 23);
             this.pboxRaceTrack.Name = "pboxRaceTrack";
-            this.pboxRaceTrack.Size = new System.Drawing.Size(1387, 576);
+            this.pboxRaceTrack.Size = new System.Drawing.Size(1579, 753);
             this.pboxRaceTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxRaceTrack.TabIndex = 0;
             this.pboxRaceTrack.TabStop = false;
@@ -322,7 +348,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1402, 611);
+            this.ClientSize = new System.Drawing.Size(1583, 774);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -361,7 +387,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMinBet;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblJoeBetLabel;
+        private System.Windows.Forms.Label lblJoBetLabel;
         private System.Windows.Forms.Label lblBobBetLabel;
         private System.Windows.Forms.Label lblAlBetLabel;
         private System.Windows.Forms.Timer timer1;

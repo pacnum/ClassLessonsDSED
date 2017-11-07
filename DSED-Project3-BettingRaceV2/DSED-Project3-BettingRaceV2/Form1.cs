@@ -24,12 +24,12 @@ namespace DSED_Project3_BettingRaceV2
             snailArray[1] = new Snail() { myPictureBox = pictureBox2 };
             snailArray[2] = new Snail() { myPictureBox = pictureBox3 };
             snailArray[3] = new Snail() { myPictureBox = pictureBox4 };
-            guyArray[0] = new Guy() { name = "Joe", cash = 50, guyLabel = lblJoeBetLabel, guyRadioButton = rbJoe };
+            guyArray[0] = new Guy() { name = "Joe", cash = 50, guyLabel = lblJoBetLabel, guyRadioButton = rbJoe };
             guyArray[1] = new Guy() { name = "Bob", cash = 75, guyLabel = lblBobBetLabel, guyRadioButton = rbBob };
             guyArray[2] = new Guy() { name = "Al", cash = 45, guyLabel = lblAlBetLabel, guyRadioButton = rbAl };
 
             lblMinBet.Text = $"Minimum Bet Allowed: {updownBetValue.Minimum}";
-
+            
         }
 
         private void btnStart_Click(object sender, EventArgs e)
