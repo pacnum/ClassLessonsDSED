@@ -63,6 +63,26 @@ namespace DSED_Project3_BettingRaceV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nerd {
+            get {
+                object obj = ResourceManager.GetObject("nerd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smug__1__Transp {
+            get {
+                object obj = ResourceManager.GetObject("smug (1)-Transp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap snail__2_ {
             get {
                 object obj = ResourceManager.GetObject("snail (2)", resourceCulture);
@@ -76,6 +96,16 @@ namespace DSED_Project3_BettingRaceV2.Properties {
         internal static System.Drawing.Bitmap vectorstock_497407 {
             get {
                 object obj = ResourceManager.GetObject("vectorstock_497407", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wink__1_ {
+            get {
+                object obj = ResourceManager.GetObject("wink (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

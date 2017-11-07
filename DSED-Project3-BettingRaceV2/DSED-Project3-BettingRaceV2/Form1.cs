@@ -25,8 +25,8 @@ namespace DSED_Project3_BettingRaceV2
             snailArray[2] = new Snail() { myPictureBox = pictureBox3 };
             snailArray[3] = new Snail() { myPictureBox = pictureBox4 };
             guyArray[0] = new Guy() { name = "Joe", cash = 50, guyLabel = lblJoeBetLabel, guyRadioButton = rbJoe };
-            guyArray[0] = new Guy() { name = "Bob", cash = 75, guyLabel = lblBobBetLabel, guyRadioButton = rbBob };
-            guyArray[0] = new Guy() { name = "Al", cash = 45, guyLabel = lblAlBetLabel, guyRadioButton = rbAl };
+            guyArray[1] = new Guy() { name = "Bob", cash = 75, guyLabel = lblBobBetLabel, guyRadioButton = rbBob };
+            guyArray[2] = new Guy() { name = "Al", cash = 45, guyLabel = lblAlBetLabel, guyRadioButton = rbAl };
 
             lblMinBet.Text = $"Minimum Bet Allowed: {updownBetValue.Minimum}";
 
@@ -34,6 +34,7 @@ namespace DSED_Project3_BettingRaceV2
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            groupBox1.Enabled = false;
             timer1.Start();
         }
 
@@ -48,7 +49,8 @@ namespace DSED_Project3_BettingRaceV2
                 else
                 {
                     timer1.Stop();
-                    MessageBox.Show($"Snail Number # {snailID} was the Winner", "Congratulations!!");
+                    groupBox1.Enabled = true;
+                    MessageBox.Show($"Snail Number # {snailID+1} was the Winner", "Congratulations!!");
                     EndOfRace();
 
                 }
@@ -108,7 +110,7 @@ namespace DSED_Project3_BettingRaceV2
                 guyArray[bettorNumber].PlaceBet((int) updownBetValue.Value, (int) updownSnail.Value);
             else
             {
-                MessageBox.Show ($"{guyArray}[bettorNumber].name) has not bet", "come on make a bet");
+                MessageBox.Show ($"{guyArray}[bettorNumber].name) has not bet");
             }
         }
     }

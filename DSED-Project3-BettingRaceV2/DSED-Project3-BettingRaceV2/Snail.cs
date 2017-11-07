@@ -10,7 +10,7 @@ namespace DSED_Project3_BettingRaceV2
     class Snail
     {
         public int distance;
-        public int racetrackLength = 760;
+        public int racetrackLength = 985;
         public PictureBox myPictureBox;
         static Random randomizer = new Random();
 
