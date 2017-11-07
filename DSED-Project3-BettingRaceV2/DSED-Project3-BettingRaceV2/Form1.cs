@@ -10,6 +10,26 @@ using System.Windows.Forms;
 
 namespace DSED_Project3_BettingRaceV2
 {
+    //todo - Project Requirements
+    //todo - Form Features
+    //1.1 - The Maximum amount that can be bet for each bettor in a label - Done
+    //todo 1.2 - The Up/Down box can only go to the maximum number for each bettor
+    //todo 1.3 - When the The Bet is made, the name, amount, and Snail apper on the right
+    //1.4 - When a person is out of money, they CANNOT bet again - Done
+    //todo 1.5 - When all bettors lose, the game is over
+
+    //todo - Class Operations
+    //2.1 - Two classes Greyhound and Bet - Done
+    //2.2 - An Abstract punter class - Done
+    //2.3 - Three inherited bettor classes
+
+    //todo - Unit Class
+    //todo 3.1 - A unit test using instantiation
+
+
+
+
+
     public partial class Form1 : Form
     {
         Snail[] snailArray = new Snail[4];
