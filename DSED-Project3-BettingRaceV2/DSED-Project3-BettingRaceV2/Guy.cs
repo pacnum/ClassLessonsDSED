@@ -21,13 +21,13 @@ namespace DSED_Project3_BettingRaceV2
 
         public void UpdateLabels()
         {
-            guyRadioButton.Text = $"{name} has {cash} !!";
-            guyLabel.Text = $"{name} bets {myBet.amount} on Snail Number {myBet.snail + 1}";
+            guyRadioButton.Text = $"{name} has {"$"+cash} !!";
+            guyLabel.Text = $"{name} bets ${myBet.amount} on Snail Number {myBet.snail + 1}";
         }
 
         public void ClearLabels()
         {
-            guyRadioButton.Text = $"{name} has {cash}";
+            guyRadioButton.Text = $"{name} has {"$"+cash}";
             guyLabel.Text = $"{name} did not make a bet";
         }
 
@@ -53,5 +53,8 @@ namespace DSED_Project3_BettingRaceV2
         {
             cash += myBet.Payout(winnerSnail);
         }
+
+
+
     }
 }

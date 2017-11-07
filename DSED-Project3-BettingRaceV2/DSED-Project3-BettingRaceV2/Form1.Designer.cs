@@ -79,7 +79,7 @@
             // rbJoe
             // 
             this.rbJoe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJoe.Location = new System.Drawing.Point(120, 51);
+            this.rbJoe.Location = new System.Drawing.Point(298, 53);
             this.rbJoe.Name = "rbJoe";
             this.rbJoe.Size = new System.Drawing.Size(145, 42);
             this.rbJoe.TabIndex = 2;
@@ -92,7 +92,7 @@
             // 
             this.rbBob.AutoSize = true;
             this.rbBob.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbBob.Location = new System.Drawing.Point(120, 145);
+            this.rbBob.Location = new System.Drawing.Point(298, 147);
             this.rbBob.Name = "rbBob";
             this.rbBob.Size = new System.Drawing.Size(145, 32);
             this.rbBob.TabIndex = 3;
@@ -105,7 +105,7 @@
             // 
             this.rbAl.AutoSize = true;
             this.rbAl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbAl.Location = new System.Drawing.Point(120, 235);
+            this.rbAl.Location = new System.Drawing.Point(298, 237);
             this.rbAl.Name = "rbAl";
             this.rbAl.Size = new System.Drawing.Size(128, 32);
             this.rbAl.TabIndex = 4;
@@ -203,7 +203,7 @@
             // lblJoBetLabel
             // 
             this.lblJoBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJoBetLabel.Location = new System.Drawing.Point(504, 56);
+            this.lblJoBetLabel.Location = new System.Drawing.Point(682, 58);
             this.lblJoBetLabel.Name = "lblJoBetLabel";
             this.lblJoBetLabel.Size = new System.Drawing.Size(575, 46);
             this.lblJoBetLabel.TabIndex = 12;
@@ -212,7 +212,7 @@
             // lblBobBetLabel
             // 
             this.lblBobBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBobBetLabel.Location = new System.Drawing.Point(504, 145);
+            this.lblBobBetLabel.Location = new System.Drawing.Point(682, 147);
             this.lblBobBetLabel.Name = "lblBobBetLabel";
             this.lblBobBetLabel.Size = new System.Drawing.Size(575, 34);
             this.lblBobBetLabel.TabIndex = 13;
@@ -221,7 +221,7 @@
             // lblAlBetLabel
             // 
             this.lblAlBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlBetLabel.Location = new System.Drawing.Point(504, 231);
+            this.lblAlBetLabel.Location = new System.Drawing.Point(682, 233);
             this.lblAlBetLabel.Name = "lblAlBetLabel";
             this.lblAlBetLabel.Size = new System.Drawing.Size(575, 36);
             this.lblAlBetLabel.TabIndex = 14;
@@ -263,7 +263,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.wink__1_;
-            this.pictureBox7.Location = new System.Drawing.Point(19, 207);
+            this.pictureBox7.Location = new System.Drawing.Point(197, 209);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(64, 64);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -273,7 +273,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.nerd;
-            this.pictureBox6.Location = new System.Drawing.Point(19, 121);
+            this.pictureBox6.Location = new System.Drawing.Point(197, 123);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(64, 64);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -283,7 +283,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.smug__1__Transp;
-            this.pictureBox5.Location = new System.Drawing.Point(18, 34);
+            this.pictureBox5.Location = new System.Drawing.Point(196, 36);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(64, 64);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

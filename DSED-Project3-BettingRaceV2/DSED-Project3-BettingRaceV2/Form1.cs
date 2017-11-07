@@ -32,6 +32,10 @@ namespace DSED_Project3_BettingRaceV2
 
     public partial class Form1 : Form
     {
+        //Snail and Guy Arrays need to be created
+        //Create bettor numbers
+        //Create a snail ID number
+
         Snail[] snailArray = new Snail[4];
         Guy[] guyArray = new Guy[3];
         int bettorNumber;
@@ -39,6 +43,9 @@ namespace DSED_Project3_BettingRaceV2
 
         public Form1()
         {
+            //Snail Array numbers 0-3 (1-4 snails) and associated image for race
+            //Guy Arrays numbers 0-2 (1-3 guys)  and associated starting cash
+
             InitializeComponent();
             snailArray[0] = new Snail() { myPictureBox = pictureBox1 };
             snailArray[1] = new Snail() { myPictureBox = pictureBox2 };
@@ -52,12 +59,15 @@ namespace DSED_Project3_BettingRaceV2
             
         }
 
+        //Race Start Button Click – Start the race timer, disable the betting group box
         private void btnStart_Click(object sender, EventArgs e)
         {
             groupBox1.Enabled = false;
             timer1.Start();
         }
 
+        //Timer1_tick (System.Windows.Form.Timer) -  runs the race until there is a winner 
+        //then displays congratulations message box
         private void timer1_Tick(object sender, EventArgs e)
         {
             for (snailID = 0; snailID < snailArray.Length; snailID++)
@@ -93,6 +103,8 @@ namespace DSED_Project3_BettingRaceV2
             return;
         }
 
+        //This region is for RadioButton Checks for punters to assign bettor numbers, 
+        //so we can Display their name when making a bet in the lblName Label.
         #region RadioButtonChecks-Region
         private void rbJoe_CheckedChanged(object sender, EventArgs e)
         {
@@ -124,6 +136,7 @@ namespace DSED_Project3_BettingRaceV2
 
         #endregion
 
+        //Display a message if a punter/bettor has not bet.
         private void btnBet_Click(object sender, EventArgs e)
         {
             if (!guyArray[bettorNumber].isBetDone)
@@ -133,5 +146,7 @@ namespace DSED_Project3_BettingRaceV2
                 MessageBox.Show ($"{guyArray}[bettorNumber].name) has not bet");
             }
         }
+
+
     }
 }
