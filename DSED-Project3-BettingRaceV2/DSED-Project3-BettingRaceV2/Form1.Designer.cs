@@ -53,6 +53,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pboxRaceTrack = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.updownBetValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updownSnail)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -151,7 +152,7 @@
             // updownSnail
             // 
             this.updownSnail.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updownSnail.Location = new System.Drawing.Point(922, 301);
+            this.updownSnail.Location = new System.Drawing.Point(922, 310);
             this.updownSnail.Maximum = new decimal(new int[] {
             4,
             0,
@@ -163,7 +164,7 @@
             0,
             0});
             this.updownSnail.Name = "updownSnail";
-            this.updownSnail.Size = new System.Drawing.Size(51, 38);
+            this.updownSnail.Size = new System.Drawing.Size(67, 38);
             this.updownSnail.TabIndex = 8;
             this.updownSnail.Tag = "";
             this.updownSnail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -175,16 +176,16 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(640, 301);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(630, 307);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 41);
+            this.label1.Size = new System.Drawing.Size(286, 41);
             this.label1.TabIndex = 9;
             this.label1.Text = "For Snail Number ...";
             // 
             // lblMinBet
             // 
-            this.lblMinBet.Location = new System.Drawing.Point(293, 156);
+            this.lblMinBet.Location = new System.Drawing.Point(1137, 35);
             this.lblMinBet.Name = "lblMinBet";
             this.lblMinBet.Size = new System.Drawing.Size(150, 23);
             this.lblMinBet.TabIndex = 10;
@@ -221,7 +222,7 @@
             // lblAlBetLabel
             // 
             this.lblAlBetLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlBetLabel.Location = new System.Drawing.Point(682, 233);
+            this.lblAlBetLabel.Location = new System.Drawing.Point(682, 237);
             this.lblAlBetLabel.Name = "lblAlBetLabel";
             this.lblAlBetLabel.Size = new System.Drawing.Size(575, 36);
             this.lblAlBetLabel.TabIndex = 14;
@@ -235,6 +236,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.pictureBox7);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.pictureBox5);
@@ -344,6 +346,16 @@
             this.pboxRaceTrack.TabIndex = 0;
             this.pboxRaceTrack.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(438, 296);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 54);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "$";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -399,6 +411,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label3;
     }
 }
 

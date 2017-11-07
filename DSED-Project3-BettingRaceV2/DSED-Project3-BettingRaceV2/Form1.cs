@@ -13,15 +13,16 @@ namespace DSED_Project3_BettingRaceV2
     //todo - Project Requirements
     //todo - Form Features
     //1.1 - The Maximum amount that can be bet for each bettor in a label - Done
-    //todo 1.2 - The Up/Down box can only go to the maximum number for each bettor
-    //todo 1.3 - When the The Bet is made, the name, amount, and Snail apper on the right
+    //1.2 - The Up/Down box can only go to the maximum number for each bettor - 
+    //      (yes and no )  - It goes up - but an error displays when trying to bet more - Done
+    //1.3 - When the The Bet is made, the name, amount, and Snail apper on the right - Done
     //1.4 - When a person is out of money, they CANNOT bet again - Done
-    //todo 1.5 - When all bettors lose, the game is over
+    //1.5 - When all bettors lose, the game is over - Done unable to bet anymore
 
     //todo - Class Operations
     //2.1 - Two classes Greyhound and Bet - Done
     //2.2 - An Abstract punter class - Done
-    //2.3 - Three inherited bettor classes
+    //2.3 - Three inherited bettor classes - Done
 
     //todo - Unit Class
     //todo 3.1 - A unit test using instantiation
@@ -51,7 +52,7 @@ namespace DSED_Project3_BettingRaceV2
             snailArray[1] = new Snail() { myPictureBox = pictureBox2 };
             snailArray[2] = new Snail() { myPictureBox = pictureBox3 };
             snailArray[3] = new Snail() { myPictureBox = pictureBox4 };
-            guyArray[0] = new Guy() { name = "Joe", cash = 50, guyLabel = lblJoBetLabel, guyRadioButton = rbJoe };
+            guyArray[0] = new Guy() { name = "Jo", cash = 50, guyLabel = lblJoBetLabel, guyRadioButton = rbJoe };
             guyArray[1] = new Guy() { name = "Bob", cash = 75, guyLabel = lblBobBetLabel, guyRadioButton = rbBob };
             guyArray[2] = new Guy() { name = "Al", cash = 45, guyLabel = lblAlBetLabel, guyRadioButton = rbAl };
 
@@ -141,10 +142,8 @@ namespace DSED_Project3_BettingRaceV2
         {
             if (!guyArray[bettorNumber].isBetDone)
                 guyArray[bettorNumber].PlaceBet((int) updownBetValue.Value, (int) updownSnail.Value);
-            else
-            {
-                MessageBox.Show ($"{guyArray}[bettorNumber].name) has not bet");
-            }
+            guyArray[bettorNumber].UpdateLabels();
+
         }
 
 
