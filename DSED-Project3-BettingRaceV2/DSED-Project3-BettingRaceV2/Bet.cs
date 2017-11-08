@@ -14,6 +14,7 @@ namespace DSED_Project3_BettingRaceV2
 
         public int Payout(int winnerSnail)
         {
+            //Winner of race is paid *2 otherwise they lose
             return snail == winnerSnail ? amount * 2 : 0;
         }
     }

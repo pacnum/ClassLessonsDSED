@@ -15,6 +15,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void  JoStartingCash()
         {
+            //Unit test to confirm starting Cash for Jo
             guyArray[0] = new Guy() { name = "Jo", cash = 50 };
             var Actual = 50;
             var Cash = 50;
@@ -24,6 +25,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void BobStartingCash()
         {
+            //Unit test to confirm starting Cash for J
             guyArray[0] = new Guy() { name = "Bob", cash = 75 };
             var Actual = 75;
             var Cash = 75;
