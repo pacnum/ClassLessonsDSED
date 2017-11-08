@@ -25,7 +25,7 @@ namespace DSED_Project3_BettingRaceV2
     //2.3 - Three inherited bettor classes - Done
 
     //todo - Unit Class
-    //todo 3.1 - A unit test using instantiation
+    //3.1 - A unit test using instantiation - Done
 
 
 
@@ -52,7 +52,7 @@ namespace DSED_Project3_BettingRaceV2
             snailArray[1] = new Snail() { myPictureBox = pictureBox2 };
             snailArray[2] = new Snail() { myPictureBox = pictureBox3 };
             snailArray[3] = new Snail() { myPictureBox = pictureBox4 };
-            guyArray[0] = new Guy() { name = "Jo", cash = 50, guyLabel = lblJoBetLabel, guyRadioButton = rbJoe };
+            guyArray[0] = new Guy() { name = "Jo", cash = 50, guyLabel = lblJoBetLabel, guyRadioButton = rbJo };
             guyArray[1] = new Guy() { name = "Bob", cash = 75, guyLabel = lblBobBetLabel, guyRadioButton = rbBob };
             guyArray[2] = new Guy() { name = "Al", cash = 45, guyLabel = lblAlBetLabel, guyRadioButton = rbAl };
 
@@ -109,7 +109,7 @@ namespace DSED_Project3_BettingRaceV2
         #region RadioButtonChecks-Region
         private void rbJoe_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbJoe.Checked)
+            if (rbJo.Checked)
             {
                 lblName.Text = "Joe";
                 bettorNumber = 0;

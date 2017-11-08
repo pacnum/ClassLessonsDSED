@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace DSED_Project3_BettingRaceV2
 {
-    class Snail
+    public class Snail
     {
         //Create distance, racetracklength, random, and picturebox functions within this code 
         public int distance;

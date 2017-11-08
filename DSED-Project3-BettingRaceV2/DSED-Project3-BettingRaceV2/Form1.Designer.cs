@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnStart = new System.Windows.Forms.Button();
-            this.rbJoe = new System.Windows.Forms.RadioButton();
+            this.rbJo = new System.Windows.Forms.RadioButton();
             this.rbBob = new System.Windows.Forms.RadioButton();
             this.rbAl = new System.Windows.Forms.RadioButton();
             this.lblName = new System.Windows.Forms.Label();
@@ -77,17 +77,17 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // rbJoe
+            // rbJo
             // 
-            this.rbJoe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJoe.Location = new System.Drawing.Point(298, 53);
-            this.rbJoe.Name = "rbJoe";
-            this.rbJoe.Size = new System.Drawing.Size(145, 42);
-            this.rbJoe.TabIndex = 2;
-            this.rbJoe.TabStop = true;
-            this.rbJoe.Text = "Jo has $50";
-            this.rbJoe.UseVisualStyleBackColor = true;
-            this.rbJoe.CheckedChanged += new System.EventHandler(this.rbJoe_CheckedChanged);
+            this.rbJo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJo.Location = new System.Drawing.Point(298, 53);
+            this.rbJo.Name = "rbJo";
+            this.rbJo.Size = new System.Drawing.Size(145, 42);
+            this.rbJo.TabIndex = 2;
+            this.rbJo.TabStop = true;
+            this.rbJo.Text = "Jo has $50";
+            this.rbJo.UseVisualStyleBackColor = true;
+            this.rbJo.CheckedChanged += new System.EventHandler(this.rbJoe_CheckedChanged);
             // 
             // rbBob
             // 
@@ -241,7 +241,7 @@
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Controls.Add(this.lblMinBet);
-            this.groupBox1.Controls.Add(this.rbJoe);
+            this.groupBox1.Controls.Add(this.rbJo);
             this.groupBox1.Controls.Add(this.rbBob);
             this.groupBox1.Controls.Add(this.rbAl);
             this.groupBox1.Controls.Add(this.lblJoBetLabel);
@@ -389,7 +389,7 @@
 
         private System.Windows.Forms.PictureBox pboxRaceTrack;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.RadioButton rbJoe;
+        private System.Windows.Forms.RadioButton rbJo;
         private System.Windows.Forms.RadioButton rbBob;
         private System.Windows.Forms.RadioButton rbAl;
         private System.Windows.Forms.Label lblName;

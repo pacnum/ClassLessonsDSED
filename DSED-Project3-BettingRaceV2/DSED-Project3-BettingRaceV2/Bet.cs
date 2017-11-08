@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSED_Project3_BettingRaceV2
 {
-    class Bet
+    public class Bet
     {
         public int amount;
         public int snail;

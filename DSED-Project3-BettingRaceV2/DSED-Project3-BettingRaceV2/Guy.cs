@@ -9,7 +9,7 @@ namespace DSED_Project3_BettingRaceV2
 {
 
 
-    class Guy
+    public class Guy
     {
         public string name;
         public Bet myBet;
