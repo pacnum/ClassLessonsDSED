@@ -17,7 +17,7 @@ namespace DSED_Project3_BettingRaceV2
     //1.1 - The Maximum amount that can be bet for each bettor in a label - Done
     //1.2 - The Up/Down box can only go to the maximum number for each bettor - 
     //     (yes and no )  - It goes up - but an error displays when trying to bet more -
-    //      Fixed - 10-11-2017 - now working succesfully
+    //      Fixed - 9-11-2017 - now working succesfully
     //1.3 - When the The Bet is made, the name, amount, and Snail apper on the right - Done
     //1.4 - When a person is out of money, they CANNOT bet again - Done
     //1.5 - When all bettors lose, the game is over - Done unable to bet anymore
