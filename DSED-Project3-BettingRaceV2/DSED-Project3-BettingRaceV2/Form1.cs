@@ -86,6 +86,7 @@ namespace DSED_Project3_BettingRaceV2
                     groupBox1.Enabled = true;
                     MessageBox.Show($"Snail Number # {snailID+1} was the Winner", "Congratulations!!");
                     EndOfRace();
+                    GameOver();
                 }
                 
             }
@@ -178,6 +179,14 @@ namespace DSED_Project3_BettingRaceV2
 
         }
 
+        public void GameOver()
+        {
+            if (guyArray[0].cash <= 0 && guyArray[1].cash <= 0 && guyArray[2].cash <= 0)
+            {
+                MessageBox.Show("Im Sorry All the bettors are now Broke - Game Over");
+                this.Close();
+            }
+        }
 
 
 
