@@ -45,6 +45,7 @@
             this.lblAlBetLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -53,7 +54,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pboxRaceTrack = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.updownBetValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updownSnail)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -79,10 +79,11 @@
             // 
             // rbJo
             // 
+            this.rbJo.AutoSize = true;
             this.rbJo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJo.Location = new System.Drawing.Point(298, 53);
             this.rbJo.Name = "rbJo";
-            this.rbJo.Size = new System.Drawing.Size(145, 42);
+            this.rbJo.Size = new System.Drawing.Size(129, 32);
             this.rbJo.TabIndex = 2;
             this.rbJo.TabStop = true;
             this.rbJo.Text = "Jo has $50";
@@ -262,6 +263,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.UseCompatibleTextRendering = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(438, 296);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 54);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "$";
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::DSED_Project3_BettingRaceV2.Properties.Resources.wink__1_;
@@ -345,16 +356,6 @@
             this.pboxRaceTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxRaceTrack.TabIndex = 0;
             this.pboxRaceTrack.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(438, 296);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 54);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "$";
             // 
             // Form1
             // 

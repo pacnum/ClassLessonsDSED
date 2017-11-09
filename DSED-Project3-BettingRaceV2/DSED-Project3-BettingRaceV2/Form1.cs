@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,6 +43,7 @@ namespace DSED_Project3_BettingRaceV2
         Guy[] guyArray = new Guy[3];
         int bettorNumber;
         int snailID;
+        //private int cash;
 
         public Form1()
         {
@@ -56,7 +59,7 @@ namespace DSED_Project3_BettingRaceV2
             guyArray[1] = new Guy() { name = "Bob", cash = 75, guyLabel = lblBobBetLabel, guyRadioButton = rbBob };
             guyArray[2] = new Guy() { name = "Al", cash = 45, guyLabel = lblAlBetLabel, guyRadioButton = rbAl };
 
-            lblMinBet.Text = $"Minimum Bet Allowed: {updownBetValue.Minimum}";
+            //lblMinBet.Text = $"Minimum Bet Allowed: {updownBetValue.Minimum}";
             
         }
 
@@ -83,8 +86,8 @@ namespace DSED_Project3_BettingRaceV2
                     groupBox1.Enabled = true;
                     MessageBox.Show($"Snail Number # {snailID+1} was the Winner", "Congratulations!!");
                     EndOfRace();
-
                 }
+                
             }
         }
 
@@ -102,18 +105,43 @@ namespace DSED_Project3_BettingRaceV2
             foreach (Snail snail in snailArray)
                 snail.TakeStartingPosition();
             return;
+            
         }
 
         //This region is for RadioButton Checks for punters to assign bettor numbers, 
         //so we can Display their name when making a bet in the lblName Label.
+        //Added updown maximum = guy cash ( working now ! ) - 9-11-2017
+
         #region RadioButtonChecks-Region
+
+        //public void RadioButton_CheckChanged(object sender, EventArgs e)
+        //{
+        //    RadioButton rbFake = sender as RadioButton;
+        //    if (rbFake.Checked == true)
+        //    {
+        //        int ID = Convert.ToInt16(rbFake.Tag);
+        //        //updownBetValue.Maximum = (int) Guy.cash;
+
+
+        //    }
+        //}
+
+        //public static string GuyCash()
+        //{
+        //    GuyCash() = Guy.cash;
+        //}
         private void rbJoe_CheckedChanged(object sender, EventArgs e)
         {
+           
+
             if (rbJo.Checked)
             {
                 lblName.Text = "Jo";
                 bettorNumber = 0;
-               
+                //updownBetValue.Maximum = cash;
+                updownBetValue.Maximum = guyArray[0].cash;
+
+
 
             }
         }
@@ -124,7 +152,7 @@ namespace DSED_Project3_BettingRaceV2
             {
                 lblName.Text = "Bob";
                 bettorNumber = 1;
-                
+                updownBetValue.Maximum = guyArray[1].cash;
             }
         }
 
@@ -134,7 +162,7 @@ namespace DSED_Project3_BettingRaceV2
             {
                 lblName.Text = "Al";
                 bettorNumber = 2;
-               
+                updownBetValue.Maximum = guyArray[2].cash;
             }
         }
 
@@ -149,6 +177,9 @@ namespace DSED_Project3_BettingRaceV2
             guyArray[bettorNumber].UpdateLabels();
 
         }
+
+
+
 
 
     }
